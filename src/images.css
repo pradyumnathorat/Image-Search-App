@@ -1,0 +1,97 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center
+}
+
+.images {
+    height: 80%;
+    width: 80%;
+}
+
+.header {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.search {
+    width: 50%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap : 1rem;
+}
+
+.search input {
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.search button {
+    border-radius: 0.5rem;
+    background-color: black;
+    color : white;
+    padding : 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header button {
+    padding: 0.5rem;
+    background-color: gray;
+    color : white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.image_card {
+    width: 17rem;
+    height: 17rem;
+    position: relative;
+}
+
+.image_card button {
+    position: absolute;
+    bottom:2rem;
+    left:37%;
+    padding: 0.5rem;
+    color : white;
+    font-weight : bold;
+    background-color: rgb(85, 85, 194);
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.image_card button:hover {
+    background-color: rgb(57, 57, 122);
+}
+
+.image_card:hover button {
+    display: block;
+}
+
+.image_card img {
+    width: 17rem;
+    height: 17rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.images {
+    margin-top:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap : 1rem;
+}
